@@ -9,5 +9,5 @@ while a != 0:
   sum = sum+a
 avg = sum/(len(list_number)-1)
 print(sum)
-print(avg)            
+print(avg)
 #print(list_number)
