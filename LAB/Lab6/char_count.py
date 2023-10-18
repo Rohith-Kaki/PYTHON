@@ -1,4 +1,4 @@
-#Given a string containing both upper and lower case letters. Write a Python program to count the number of repeated characters and display the maximum count of a character along with the character.
+#2.Given a string containing both upper and lower case letters. Write a Python program to count the number of repeated characters and display the maximum count of a character along with the character.
 # Sample Input: ABaBCbGc
 # 	Output:
 # 	2A
