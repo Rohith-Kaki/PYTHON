@@ -4,7 +4,7 @@ if(code_decode == "code"):
     splited_message = code_input.split(" ")
     list = []
     for word in splited_message:
-        if (len(word)>=3):
+        if (len(word)>=3):  #removes first character and adds ot to the end.
             new_message = "rlp"+ word[1:]+word[0]+"sbp"
             list.append(new_message)
         else:
