@@ -3,7 +3,7 @@ Word = input("Enter a Word:")
 Word_len = len(Word)
 if(Word_len >=3):
     if(Word[-3:] == "ing"):
-        New_word = Word[:-3] +"ly"
+        New_word = Word[:] +"ly"
         print(New_word)
     elif(Word[-3:] != "ing"):
          New_word = Word[:] + "ing"
