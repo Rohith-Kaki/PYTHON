@@ -1,3 +1,4 @@
+import numpy as np
 transition_table = [[0,1,0],
                     [0,1,1],
                     [2,3,0],
@@ -6,16 +7,27 @@ transition_table = [[0,1,0],
                     [4,5,1],
                     [6,7,4],
                     [6,7,3]]
+
 seq_action = [[0,1,1,1,1,2,2,2,2,1],
               [0,2,1,2,2,2,1,1,1,0],
               [0,0,0,0,0,1,1,1,1,2],
+              [2,2,2,2,2,2,1,1,1,0],
+              [0,1,1,1,1,2,2,2,2,1],
+              [0,2,1,2,2,2,1,1,1,0],
+              [0,0,0,0,0,1,1,1,1,2],
+              [2,2,2,2,2,2,1,1,1,0],
+              [0,0,0,0,0,1,1,1,1,2],
               [2,2,2,2,2,2,1,1,1,0]]
-# import random
-# num_rows = 10
-# num_cols = 100
-# seqaction = [[random.randint(0, 2) for _ in range(num_cols)] for _ in range(num_rows)]
-goal_state = [0,1]
+seq_action1 = []
 duration = 10
+
+# using random generator
+for i in range(0,11):
+    seq = np.random.randint(0,3,duration)
+    seq_action1.append(seq)
+
+goal_state = [0,1]
+
 current_state = int(input("Enter inital state:"))
 for seq in seq_action:
     t = 0
